@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<style>
+ * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+            } 
+            
+            body { 
+            font-family: Arial, sans-serif; 
+            background-color: #f0f4f8; /* Light gray-blue background */ 
+            color: #333; 
+            line-height: 1.6; 
+            } 
+            
+            header { 
+            background-color: #004080; /* Navy blue */ 
+            color: white; 
+            padding: 1em; 
+            text-align: center; 
+            } 
+            
+            nav a { 
+            color: white; 
+            margin: 0 10px; 
+            text-decoration: none; 
+            } 
+            
+            section { 
+            padding: 2em; 
+            margin: auto; 
+            max-width: 800px; 
+            background-color: #ffffff; /* White background for content sections */ 
+            margin-top: 2em; 
+            border-radius: 8px; 
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+            } 
+            
+            button { 
+            background-color: #0073e6; 
+            color: white; 
+            border: none; 
+            padding: 0.7em 1.2em; 
+            cursor: pointer; 
+            border-radius: 4px; 
+            } 
+            
+            button:hover { 
+            background-color: #005bb5; 
+            } 
+            
+            form input, 
+            form textarea { 
+            width: 100%; 
+            padding: 0.6em; 
+            margin-bottom: 1em; 
+            border: 1px solid #ccc; 
+            border-radius: 4px; 
+            background-color: #f9f9f9; 
+            } 
+            
+            footer { 
+            background-color: #004080; 
+            color: white; 
+            text-align: center; 
+            padding: 1em; 
+            margin-top: 2em; 
+            } 
+            
+            /* Dark Mode Background */ 
+            body.dark { 
+            background-color: #1c1c1c; 
+            color: #ddd; 
+            } 
+            
+            body.dark section { 
+            background-color: #2a2a2a; 
+            color: #eee; 
+            } 
+            
+            body.dark header, 
+            body.dark footer { 
+            background-color: #000; 
+            } 
+            
+            
+            
+
+           
+            
+
+
+
+
+
+
+
+
+
+
+</style>
+
+
+<body>
+    <header> 
+        <h1>Code4All Academy</h1> 
+        <nav> 
+        <a href="#home">Home</a> 
+        <a href="#courses">Courses</a> 
+        <a href="#contact">Contact</a> 
+        </nav> 
+        </header> 
+        
+        <section id="home"> 
+        <h2>Welcome to Code4All</h2> 
+        Our organization delivers free coding training to people all around the world.
+        <button onclick="toggleTheme()">Toggle Light/Dark Mode</button> 
+        </section> 
+        
+        <section id="courses"> 
+        <h2>Our Courses</h2> 
+        <ul id="courseList"> 
+        <li>HTML & CSS Basics</li> 
+        <li>JavaScript Fundamentals</li> 
+        </ul> 
+        <button onclick="addCourse()">Add New Course</button> 
+        </section> 
+        
+        <section id="contact"> 
+        <h2>Contact Us</h2> 
+        <form id="contactForm"> 
+        <input type="text" placeholder="Your Name" required> 
+        <input type="email" placeholder="Your Email" required> 
+        <textarea placeholder="Your Message" required></textarea> 
+        <button type="submit">Submit</button> 
+        </form> 
+        </section> 
+        
+        <footer> 
+        <p>&copy; 2025 Code4All Academy</p> 
+        </footer> 
+        
+        <script src="script.js"></script> 
+        </body> 
+        </html> 
+        
+        
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+            } 
+            
+            body { 
+            font-family: Arial, sans-serif; 
+            background-color: #f0f4f8; /* Light gray-blue background */ 
+            color: #333; 
+            line-height: 1.6; 
+            } 
+            
+            header { 
+            background-color: #004080; /* Navy blue */ 
+            color: white; 
+            padding: 1em; 
+            text-align: center; 
+            } 
+            
+            nav a { 
+            color: white; 
+            margin: 0 10px; 
+            text-decoration: none; 
+            } 
+            
+            section { 
+            padding: 2em; 
+            margin: auto; 
+            max-width: 800px; 
+            background-color: #ffffff; /* White background for content sections */ 
+            margin-top: 2em; 
+            border-radius: 8px; 
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+            } 
+            
+            button { 
+            background-color: #0073e6; 
+            color: white; 
+            border: none; 
+            padding: 0.7em 1.2em; 
+            cursor: pointer; 
+            border-radius: 4px; 
+            } 
+            
+            button:hover { 
+            background-color: #005bb5; 
+            } 
+            
+            form input, 
+            form textarea { 
+            width: 100%; 
+            padding: 0.6em; 
+            margin-bottom: 1em; 
+            border: 1px solid #ccc; 
+            border-radius: 4px; 
+            background-color: #f9f9f9; 
+            } 
+            
+            footer { 
+            background-color: #004080; 
+            color: white; 
+            text-align: center; 
+            padding: 1em; 
+            margin-top: 2em; 
+            } 
+            
+            /* Dark Mode Background */ 
+            body.dark { 
+            background-color: #1c1c1c; 
+            color: #ddd; 
+            } 
+            
+            body.dark section { 
+            background-color: #2a2a2a; 
+            color: #eee; 
+            } 
+            
+            body.dark header, 
+            body.dark footer { 
+            background-color: #000; 
+            } 
+            
+            
+            
+
+            
+            function toggleTheme() { 
+                document.body.classList.toggle('dark-mode'); 
+                } 
+                
+                function addCourse() { 
+                const courseList = document.getElementById('courseList'); 
+                const newCourse = document.createElement('li'); 
+                newCourse.textContent = 'New Course: React Basics'; 
+                courseList.appendChild(newCourse); 
+                } 
+                
+                document.getElementById('contactForm').addEventListener('submit', function(e) { 
+                e.preventDefault(); 
+                alert('Thank you for contacting Code4All Academy! '); 
+                });
+                
+                
+            
